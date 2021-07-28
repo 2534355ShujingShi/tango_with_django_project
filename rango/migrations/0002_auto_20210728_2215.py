@@ -8,6 +8,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('rango', '0001_initial'),
     ]
+    
     operations = [
         migrations.AlterModelOptions(
             name='category',
