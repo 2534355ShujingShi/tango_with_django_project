@@ -26,7 +26,7 @@ def about(request):
     # Construct a dictionary to pass to the template engine as its context.
     # Note the key boldmessage matches to {{ boldmessage }} in the template!
 
-    context_dict = {}
+    context_dict = {'boldmessage':"This tutorial has been put together by Shujing Shi."}
 
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
