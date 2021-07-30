@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+PASSWORD_HASHERS = ( 'django.contrib.auth.hashers.PBKDF2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher', )
 # Application definition
 
 INSTALLED_APPS = [
@@ -131,3 +131,5 @@ STATIC_URL = '/static/'
 # Media files (CSS, JavaScript, Images)
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+LOGIN_URL = 'rango:login'
